@@ -8,6 +8,8 @@
     "nx": "nx",
     "start": "ng serve",
     "build": "ng build",
+    "build:np-web": "npm --prefix np-web run build",
+    "build:api": "npm --prefix api run build",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
