@@ -22,6 +22,9 @@
           }
         ],
         "styles": ["apps/web/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/ui/src"]
+        },
         "server": "apps/web/src/main.server.ts",
         "ssr": {
           "entry": "apps/web/src/server.ts"
