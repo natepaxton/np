@@ -1,0 +1,11 @@
+// 1. Import Bootstrap's functions first (required for color functions, etc.)
+@import 'bootstrap/scss/functions';
+
+// 2. Import custom variable overrides (these will take precedence due to Bootstrap's !default flags)
+@import 'variables';
+
+// 3. Import Bootstrap (uses !default, so our custom variables above take precedence)
+@import 'bootstrap/scss/bootstrap';
+
+// 4. Import custom styles
+@import 'custom';
