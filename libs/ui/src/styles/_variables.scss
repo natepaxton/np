@@ -1,38 +1,182 @@
-// Bootstrap Variable Overrides
+// Bootstrap Variable Overrides - Monokai Dark Theme
 // Override Bootstrap's default variables here before importing Bootstrap
 // See: node_modules/bootstrap/scss/_variables.scss for all available variables
 
-// Example overrides:
-// $primary: #007bff;
-// $secondary: #6c757d;
-// $success: #28a745;
-// $danger: #dc3545;
-// $warning: #ffc107;
-// $info: #17a2b8;
+// Enable dark color mode by default
+$color-mode-type: data;
+
+// Monokai Color Palette
+$primary:   #66D9EF;  // Monokai cyan/blue
+$secondary: #75715E;  // Monokai gray
+$success:   #A6E22E;  // Monokai green
+$info:      #AE81FF;  // Monokai purple
+$warning:   #E6DB74;  // Monokai yellow
+$danger:    #F92672;  // Monokai pink/magenta
+$light:     #3E3D32;  // Lighter than bg for cards
+$dark:      #F8F8F2;  // Monokai foreground
+
+// Body and background colors
+$body-bg:                   #272822;  // Monokai background
+$body-color:                #F8F8F2;  // Monokai foreground
+$body-secondary-bg:         #1E1F1C;  // Darker than main bg
+$body-tertiary-bg:          #3E3D32;  // Lighter than main bg
+
+// Text colors
+$body-emphasis-color:       #F8F8F2;  // Monokai foreground
+$body-secondary-color:      #CFCFC2;  // Dimmed foreground
+$body-tertiary-color:       #75715E;  // Monokai gray
+
+// Border colors
+$border-color:              #3E3D32;
+$border-color-translucent:  rgba(62, 61, 50, 0.5);
+
+// Link colors
+$link-color:                $primary;
+$link-hover-color:          #89E4F7;  // Lighter cyan
+$link-decoration:           none;
+$link-hover-decoration:     underline;
+
+// Component backgrounds
+$component-active-bg:       $primary;
+$component-active-color:    #1E1F1C;
 
 // Typography
-// $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-// $font-size-base: 1rem;
-// $line-height-base: 1.5;
+$headings-color:            $body-emphasis-color;
 
-// Spacing
-// $spacer: 1rem;
+// Code
+$code-color:                #AE81FF;  // Monokai purple
+$pre-color:                 $body-color;
 
-// Border radius
-// $border-radius: 0.25rem;
-// $border-radius-lg: 0.3rem;
-// $border-radius-sm: 0.2rem;
+// Cards
+$card-bg:                   #1E1F1C;  // Darker black
+$card-border-color:         $border-color;
+$card-cap-bg:               rgba(62, 61, 50, 0.3);
 
-// Custom color palette - "Clean modern"
-// These override Bootstrap's default colors (Bootstrap uses !default)
-$primary:   #2563EB;
-$secondary: #64748B;
-$success:   #16A34A;
-$info:      #0EA5E4;
-$warning:   #F59E0B;
-$danger:    #DC2626;
-$light:     #F8FAFC;
-$dark:      #0F172A;
+// Forms
+$input-bg:                         #1E1F1C;  // Darker black
+$input-disabled-bg:                #3E3D32;
+$input-disabled-border-color:      $border-color;
+$input-color:                      $body-color;
+$input-border-color:               $border-color;
+$input-focus-bg:                   $input-bg;
+$input-focus-border-color:         $primary;
+$input-focus-color:                $body-emphasis-color;
+$input-placeholder-color:          $body-tertiary-color;
 
-// Bootstrap will automatically build the $theme-colors map from these values
-// You can add more custom variables below
+$form-select-bg:                   $input-bg;
+$form-select-disabled-bg:          $input-disabled-bg;
+$form-select-indicator-color:      $body-tertiary-color;
+
+$form-check-input-bg:              #1E1F1C;
+$form-check-input-border:          1px solid $border-color;
+$form-check-input-checked-bg-color: $primary;
+
+// Buttons
+$btn-disabled-opacity:      0.5;
+
+// Dropdowns
+$dropdown-bg:                       #1E1F1C;
+$dropdown-border-color:             $border-color;
+$dropdown-divider-bg:               $border-color;
+$dropdown-link-color:               $body-color;
+$dropdown-link-hover-color:         $body-emphasis-color;
+$dropdown-link-hover-bg:            rgba(102, 217, 239, 0.1);  // Monokai cyan tint
+$dropdown-link-active-color:        $component-active-color;
+$dropdown-link-active-bg:           $component-active-bg;
+$dropdown-link-disabled-color:      $body-tertiary-color;
+$dropdown-dark-bg:                  #000000;
+
+// Navs
+$nav-tabs-border-color:             $border-color;
+$nav-tabs-link-hover-border-color:  $border-color $border-color transparent;
+$nav-tabs-link-active-color:        $body-emphasis-color;
+$nav-tabs-link-active-bg:           $body-bg;
+$nav-tabs-link-active-border-color: $border-color $border-color $body-bg;
+
+// Navbar
+$navbar-dark-color:                 rgba(248, 248, 242, 0.75);
+$navbar-dark-hover-color:           $body-emphasis-color;
+$navbar-dark-active-color:          $body-emphasis-color;
+$navbar-dark-disabled-color:        rgba(248, 248, 242, 0.25);
+$navbar-dark-toggler-border-color:  rgba(248, 248, 242, 0.1);
+
+// Pagination
+$pagination-bg:                     #1E1F1C;
+$pagination-border-color:           $border-color;
+$pagination-hover-color:            $body-emphasis-color;
+$pagination-hover-bg:               #3E3D32;
+$pagination-hover-border-color:     $border-color;
+$pagination-focus-color:            $body-emphasis-color;
+$pagination-focus-bg:               #3E3D32;
+$pagination-active-color:           $component-active-color;
+$pagination-active-bg:              $component-active-bg;
+$pagination-active-border-color:    $component-active-bg;
+$pagination-disabled-color:         $body-tertiary-color;
+$pagination-disabled-bg:            #1E1F1C;
+$pagination-disabled-border-color:  $border-color;
+
+// Tables
+$table-bg:                          transparent;
+$table-striped-bg:                  rgba(62, 61, 50, 0.3);
+$table-active-bg:                   rgba(62, 61, 50, 0.5);
+$table-hover-bg:                    rgba(62, 61, 50, 0.4);
+$table-border-color:                $border-color;
+$table-group-separator-color:       #3E3D32;
+
+// Modals
+$modal-content-bg:                  #1E1F1C;
+$modal-content-border-color:        $border-color;
+$modal-backdrop-bg:                 #000000;
+$modal-backdrop-opacity:            0.85;
+$modal-header-border-color:         $border-color;
+$modal-footer-border-color:         $border-color;
+
+// Alerts
+$alert-bg-scale:                    -80%;
+$alert-border-scale:                -60%;
+$alert-color-scale:                 40%;
+
+// List group
+$list-group-bg:                     #1E1F1C;
+$list-group-border-color:           $border-color;
+$list-group-hover-bg:               #3E3D32;
+$list-group-active-color:           $component-active-color;
+$list-group-active-bg:              $component-active-bg;
+$list-group-active-border-color:    $component-active-bg;
+$list-group-disabled-color:         $body-tertiary-color;
+$list-group-disabled-bg:            #1E1F1C;
+$list-group-action-color:           $body-color;
+$list-group-action-hover-color:     $body-emphasis-color;
+$list-group-action-active-color:    $body-color;
+$list-group-action-active-bg:       #3E3D32;
+
+// Breadcrumbs
+$breadcrumb-divider-color:          $body-tertiary-color;
+$breadcrumb-active-color:           $body-secondary-color;
+
+// Tooltips
+$tooltip-bg:                        #3E3D32;
+$tooltip-color:                     $body-emphasis-color;
+
+// Popovers
+$popover-bg:                        #1E1F1C;
+$popover-border-color:              $border-color;
+$popover-header-bg:                 rgba(62, 61, 50, 0.5);
+$popover-body-color:                $body-color;
+
+// Toasts
+$toast-background-color:            rgba(30, 31, 28, 0.95);
+$toast-border-color:                $border-color;
+$toast-header-background-color:     rgba(62, 61, 50, 0.5);
+$toast-header-border-color:         rgba(62, 61, 50, 0.5);
+
+// Progress bars
+$progress-bg:                       #1E1F1C;
+$progress-border-radius:            0.375rem;
+
+// Close button
+$btn-close-color:                   $body-color;
+
+// Offcanvas
+$offcanvas-bg-color:                #1E1F1C;
+$offcanvas-border-color:            $border-color;
